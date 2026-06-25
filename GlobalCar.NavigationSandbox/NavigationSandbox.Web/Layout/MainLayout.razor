@@ -1,0 +1,29 @@
+@inherits LayoutComponentBase
+@namespace NavigationSandbox.Web.Layout
+
+<div class="d-flex vh-100 overflow-hidden">
+
+    <Sidebar MenuItems="MenuItems"
+             IsCollapsed="IsSidebarCollapsed"
+             OnToggle="ToggleSidebar"
+             CurrentUrl="CurrentUrl"
+             AppVersion="AppVersion" />
+
+    <div class="d-flex flex-column flex-grow-1 overflow-hidden">
+
+        <Topbar ModuleTitle="ModuleTitle"
+                ModuleDescription="ModuleDescription"
+                BranchName="BranchName"
+                EnvironmentName="EnvironmentName"
+                UserName="UserName"
+                UserRole="UserRole" />
+
+        <div class="flex-grow-1 overflow-auto bg-light">
+            <div class="p-4">
+                @Body
+            </div>
+        </div>
+
+    </div>
+
+</div>

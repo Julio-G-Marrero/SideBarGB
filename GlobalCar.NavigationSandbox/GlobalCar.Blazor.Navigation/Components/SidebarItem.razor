@@ -1,0 +1,32 @@
+@namespace GlobalCar.Blazor.Navigation.Components
+
+@if (HasChildren)
+{
+    <div>
+        <button class="@GroupButtonClass" @onclick="ToggleChildren">
+            <i class="@Item.Icon"></i>
+            <span class="@TextClass">@Item.Text</span>
+            <i class="@ChevronClass"></i>
+        </button>
+
+        @if (isExpanded && !IsCollapsed)
+        {
+            <div class="nav flex-column ps-3 gap-1 mt-1">
+                @foreach (var child in SortedChildren)
+                {
+                    <a href="@child.Href" class="@GetChildLinkClass(child.Href)">
+                        <i class="@child.Icon"></i>
+                        <span class="ms-2 small">@child.Text</span>
+                    </a>
+                }
+            </div>
+        }
+    </div>
+}
+else
+{
+    <a href="@Item.Href" class="@LinkClass">
+        <i class="@Item.Icon"></i>
+        <span class="@TextClass">@Item.Text</span>
+    </a>
+}

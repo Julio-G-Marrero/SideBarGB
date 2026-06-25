@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="GlobalCar.Blazor.Navigation/GlobalCar.Blazor.Navigation.csproj" />
+  <Project Path="NavigationSandbox.Web/NavigationSandbox.Web.csproj" />
+</Solution>

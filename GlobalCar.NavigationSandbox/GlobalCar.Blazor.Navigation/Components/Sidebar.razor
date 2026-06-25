@@ -1,0 +1,32 @@
+@namespace GlobalCar.Blazor.Navigation.Components
+
+<div class="d-flex flex-column bg-dark text-white flex-shrink-0 vh-100 border-end border-primary shadow">
+
+    <div class="@HeaderContainerClass">
+        <button class="btn btn-sm btn-outline-light flex-shrink-0" @onclick="OnToggle">
+            <i class="@ToggleIcon"></i>
+        </button>
+        <div class="@HeaderClass">
+            <div class="fw-bold text-white lh-1">GLOBAL CAR</div>
+            <div class="text-white-50 small">Niux 2.0</div>
+        </div>
+    </div>
+
+    <nav class="nav flex-column flex-grow-1 overflow-auto py-2 px-1 gap-1">
+        @foreach (var item in SortedItems)
+        {
+            <SidebarItem Item="item" IsCollapsed="IsCollapsed" CurrentUrl="CurrentUrl" />
+        }
+    </nav>
+
+    <div class="mt-auto border-top border-secondary px-3 py-2">
+        <div class="@FooterTextClass">
+            <div class="text-white-50 small lh-1">Niux 2.0</div>
+            <div class="text-white-50 small">@AppVersion</div>
+        </div>
+        <div class="@FooterIconClass">
+            <i class="bi bi-info-circle text-white-50"></i>
+        </div>
+    </div>
+
+</div>

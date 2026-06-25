@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\GlobalCar.Blazor.Navigation.props" />
+</Project>

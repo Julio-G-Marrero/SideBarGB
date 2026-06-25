@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Barra_lateral\\GlobalCar.NavigationSandbox\\GlobalCar.Blazor.Navigation\\wwwroot\\background.png",
+      "PackagePath": "staticwebassets\\background.png"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Barra_lateral\\GlobalCar.NavigationSandbox\\GlobalCar.Blazor.Navigation\\wwwroot\\exampleJsInterop.js",
+      "PackagePath": "staticwebassets\\exampleJsInterop.js"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0\\staticwebassets\\msbuild.GlobalCar.Blazor.Navigation.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0\\staticwebassets\\msbuild.GlobalCar.Blazor.Navigation.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0\\staticwebassets\\msbuild.build.GlobalCar.Blazor.Navigation.props",
+      "PackagePath": "build\\GlobalCar.Blazor.Navigation.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0\\staticwebassets\\msbuild.buildMultiTargeting.GlobalCar.Blazor.Navigation.props",
+      "PackagePath": "buildMultiTargeting\\GlobalCar.Blazor.Navigation.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0\\staticwebassets\\msbuild.buildTransitive.GlobalCar.Blazor.Navigation.props",
+      "PackagePath": "buildTransitive\\GlobalCar.Blazor.Navigation.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
